@@ -30,3 +30,15 @@ npx tsc --init
 serve para criar o arquivo de configurações do typescript (tsconfig.json)
 npx-ts node
 
+npm install ts-node-dev -D
+instala a dependencia que permite atualizar o servidor sem ter que reiniciar toda hora.
+
+depois de instalar o ts-node-dev, adicionar um script no package.json:
+    "dev": "ts-node-dev src/server.ts"
+
+
+--- finalizado o backend do primeiro dependencia
+
+iniciando o front end
+
+npx create-react-app web --template=typescript
