@@ -10,6 +10,8 @@ const app = express();
 app.get('/users', (request, response) => {
   // request para retornar as informações enviadas do front - response para devolver as respostas para o front
   console.log('listagem de usuários');
+
+  response.json(['Diego', 'João', 'Suele']);
 });
 
 app.listen(3333);
