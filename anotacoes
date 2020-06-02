@@ -1,0 +1,32 @@
+npm init -y
+cria o package.json
+arquivo com informações principais do projeto
+armazena dependencias do projeto (mostrando as versoes)
+
+npm install express
+
+package-lock.json arquivo de logs que cria sozinho
+
+node_modules
+armazena o código das dependencias que foram instaladas
+as dependencias do express criam as dependencias que estão dentro da pasta, por isso ela fica grande
+cada dependencia vira uma pasta
+
+import express from 'express';
+// ao fazer essa importação ele retorna um erro, porque não tem a definição dos tipos utilizados no projeto
+// para fazer essa definição devemos instalar uma biblioteca que informa os tipos das funções do express.
+// para fazer esse instalação usamos npm install @types/express -D
+// ao instalar uma dependencia com "-D" estamos dizendo que essa dependencia é apenas de desenvolvimento
+// quando a aplicação for online não precisará das dependências.
+
+npm install typescript -D
+
+npm install ts-node -D
+para executar o comando do node, e rodar o servidor, necessário pois estamos trabalhando com typescript
+
+npx serve pra executar os binários das dependencias instaladas
+
+npx tsc --init
+serve para criar o arquivo de configurações do typescript (tsconfig.json)
+npx-ts node
+
