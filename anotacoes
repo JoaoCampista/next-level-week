@@ -42,3 +42,12 @@ depois de instalar o ts-node-dev, adicionar um script no package.json:
 iniciando o front end
 
 npx create-react-app web --template=typescript
+
+---
+
+knex suporte ao diversos bancos de data (query builder)
+SELECT * FROM users WHERE name = 'Diego' forma padrao de sql
+knex('users').where('name', 'joao').select('*') forma do knex utilizando js
+
+conseguimos continuar usando apenas js, 
+adaptar para qualquer banco de dados.
